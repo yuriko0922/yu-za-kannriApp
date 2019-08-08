@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController2ViewController: UIViewController {
 
+    // 遷移元からもらう情報
+    var receiveName: String = String()
+    var receiveHobby: String = String()
     
     //名前を代入するラベル
     @IBOutlet weak var nameLabel: UILabel!
@@ -20,6 +23,12 @@ class ViewController2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // ラベルに遷移元から受け取った情報を表示
+        nameLabel.text = receiveName
+        syumiLabel.text = receiveHobby
+        
+        
 
         // Do any additional setup after loading the view.
     }
