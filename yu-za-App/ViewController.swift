@@ -63,14 +63,14 @@ class ViewController: UIViewController {
         giveName = names[tagu]
         giveHobby = syumis[tagu]
         
-
+        
         
         //画面遷移
         performSegue(withIdentifier: "nextSegue", sender: nil)
         
     }
     
-    // 画面遷移の前に実行される
+    // 画面遷移の前に実行される 情報を渡す準備（保存的な）
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "nextSegue", let nextVC = segue.destination as? ViewController2ViewController else {
             return

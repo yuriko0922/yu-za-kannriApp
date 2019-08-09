@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController2ViewController: UIViewController {
-
+    
     // 遷移元からもらう情報
     var receiveName: String = String()
     var receiveHobby: String = String()
@@ -29,20 +29,20 @@ class ViewController2ViewController: UIViewController {
         syumiLabel.text = receiveHobby
         
         
-
+        
         // Do any additional setup after loading the view.
     }
     
     
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
