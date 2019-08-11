@@ -1,24 +1,331 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wiz-eL-4fG">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--yu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController title="yu" id="BYZ-38-t0r" customClass="ViewController" customModule="yu_za_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lIZ-UX-9kf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPq-jc-sIW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zh7-G5-mNt">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="830"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZcA-zt-Kfg">
+                                                <rect key="frame" x="10" y="0.0" width="394" height="830"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80t-wB-ilN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="gFT-PP-tzP"/>
+                                                        </constraints>
+                                                        <state key="normal" title="永井　優">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a2K-gb-obx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKf-pc-9bx">
+                                                        <rect key="frame" x="0.0" y="60" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="9r9-rC-qfe"/>
+                                                        </constraints>
+                                                        <state key="normal" title="小野　勇輔">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPb-f3-qjG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNu-RJ-2zc">
+                                                        <rect key="frame" x="0.0" y="120" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="mTZ-TD-dTh"/>
+                                                        </constraints>
+                                                        <state key="normal" title="豊岡　正紘">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rxS-Q5-1lH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-y9-eCn">
+                                                        <rect key="frame" x="0.0" y="180" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="apa-Rn-CTp"/>
+                                                        </constraints>
+                                                        <state key="normal" title="分目　祐太">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PpV-NJ-TtP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiO-La-Wgg">
+                                                        <rect key="frame" x="0.0" y="240" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="a12-wi-vFv"/>
+                                                        </constraints>
+                                                        <state key="normal" title="金田　祐作">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VM8-gu-rz4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QM-cc-vgz">
+                                                        <rect key="frame" x="0.0" y="300" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="K9S-Or-waH"/>
+                                                        </constraints>
+                                                        <state key="normal" title="甲斐崎　香">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSk-T6-pfx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyY-Wy-4FM">
+                                                        <rect key="frame" x="0.0" y="360" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="dqO-14-Y1j"/>
+                                                        </constraints>
+                                                        <state key="normal" title="志賀　大河">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4N-16-LOt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIx-h6-x4c">
+                                                        <rect key="frame" x="0.0" y="420" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="YNX-Jj-cB8"/>
+                                                        </constraints>
+                                                        <state key="normal" title="中村　泰輔">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSG-vp-xHX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjf-hf-IME">
+                                                        <rect key="frame" x="0.0" y="480" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="f88-sH-VDo"/>
+                                                        </constraints>
+                                                        <state key="normal" title="津國　由莉子">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uHq-zI-oix"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfD-Ol-aQ0">
+                                                        <rect key="frame" x="0.0" y="540" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="2WC-cU-qJu"/>
+                                                        </constraints>
+                                                        <state key="normal" title="堀田　真">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VOj-Hb-td5"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnV-N8-Z4U">
+                                                        <rect key="frame" x="0.0" y="600" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="rqq-e0-d7V"/>
+                                                        </constraints>
+                                                        <state key="normal" title="田内　翔太郎">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ucs-RH-dkz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJK-3x-Hhh">
+                                                        <rect key="frame" x="0.0" y="660" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="1tQ-0y-gUj"/>
+                                                        </constraints>
+                                                        <state key="normal" title="福沢　貴一">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FuA-Jf-O6T"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ue5-uR-JtE">
+                                                        <rect key="frame" x="0.0" y="720" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="wS7-8R-kPo"/>
+                                                        </constraints>
+                                                        <state key="normal" title="平田　奈那">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yys-4d-7Y4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xz-N5-KaP">
+                                                        <rect key="frame" x="0.0" y="780" width="394" height="50"/>
+                                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71026862157534243" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="B9D-cd-vAO"/>
+                                                        </constraints>
+                                                        <state key="normal" title="吉澤　優衣">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apS-TH-W1n"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ZcA-zt-Kfg" firstAttribute="top" secondItem="zh7-G5-mNt" secondAttribute="top" id="jLE-rC-Ncq"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZcA-zt-Kfg" secondAttribute="trailing" constant="10" id="jjW-qB-E6f"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZcA-zt-Kfg" secondAttribute="bottom" id="lKr-dj-QXA"/>
+                                            <constraint firstItem="ZcA-zt-Kfg" firstAttribute="leading" secondItem="zh7-G5-mNt" secondAttribute="leading" constant="10" id="qvV-EU-vaf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zh7-G5-mNt" secondAttribute="trailing" id="CRr-9N-LBH"/>
+                                    <constraint firstItem="zh7-G5-mNt" firstAttribute="width" secondItem="zPq-jc-sIW" secondAttribute="width" id="M16-dc-tl6"/>
+                                    <constraint firstAttribute="bottom" secondItem="zh7-G5-mNt" secondAttribute="bottom" id="R5Q-oA-eu8"/>
+                                    <constraint firstItem="zh7-G5-mNt" firstAttribute="top" secondItem="zPq-jc-sIW" secondAttribute="top" id="YYz-lc-HTJ"/>
+                                    <constraint firstItem="zh7-G5-mNt" firstAttribute="leading" secondItem="zPq-jc-sIW" secondAttribute="leading" id="eiJ-3P-1ry"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="zPq-jc-sIW" firstAttribute="top" secondItem="zNf-LT-uPz" secondAttribute="top" id="B0b-Cs-MCu"/>
+                            <constraint firstItem="zPq-jc-sIW" firstAttribute="leading" secondItem="zNf-LT-uPz" secondAttribute="leading" id="Qht-XY-He3"/>
+                            <constraint firstItem="zNf-LT-uPz" firstAttribute="bottom" secondItem="zPq-jc-sIW" secondAttribute="bottom" id="WXW-jl-nE8"/>
+                            <constraint firstItem="zNf-LT-uPz" firstAttribute="trailing" secondItem="zPq-jc-sIW" secondAttribute="trailing" id="jCt-Vx-JWU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zNf-LT-uPz"/>
                     </view>
+                    <navigationItem key="navigationItem" title="ユーザー管理" id="Z1d-Pw-h9T"/>
+                    <connections>
+                        <segue destination="9jl-Pd-g6F" kind="show" identifier="nextSegue" id="Uad-9J-Azo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="114.50892857142857"/>
+        </scene>
+        <!--ユーザーデータ-->
+        <scene sceneID="Iba-iv-hsK">
+            <objects>
+                <viewController title="ユーザーデータ" id="9jl-Pd-g6F" customClass="ViewController2ViewController" customModule="yu_za_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Nf-CX-n0F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMv-Xx-O5Z">
+                                <rect key="frame" x="0.0" y="88" width="414" height="21"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71487050510000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vws-li-hiP">
+                                <rect key="frame" x="10" y="139" width="414" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趣味" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfr-VM-aFq">
+                                <rect key="frame" x="0.0" y="189.5" width="414" height="21"/>
+                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="0.71262307359999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obD-DD-0xY">
+                                <rect key="frame" x="10" y="240.5" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lH2-B6-AwJ" firstAttribute="trailing" secondItem="NMv-Xx-O5Z" secondAttribute="trailing" id="2fA-pR-eXl"/>
+                            <constraint firstItem="Kfr-VM-aFq" firstAttribute="top" secondItem="vws-li-hiP" secondAttribute="bottom" constant="30" id="4TM-Ft-XKy"/>
+                            <constraint firstItem="lH2-B6-AwJ" firstAttribute="trailing" secondItem="obD-DD-0xY" secondAttribute="trailing" constant="10" id="5Vx-bI-caW"/>
+                            <constraint firstItem="lH2-B6-AwJ" firstAttribute="trailing" secondItem="Kfr-VM-aFq" secondAttribute="trailing" id="6YA-xt-Gyl"/>
+                            <constraint firstItem="obD-DD-0xY" firstAttribute="leading" secondItem="lH2-B6-AwJ" secondAttribute="leading" constant="10" id="IEo-Az-hp0"/>
+                            <constraint firstItem="vws-li-hiP" firstAttribute="top" secondItem="NMv-Xx-O5Z" secondAttribute="bottom" constant="30" id="PK8-Bn-P6M"/>
+                            <constraint firstItem="NMv-Xx-O5Z" firstAttribute="leading" secondItem="lH2-B6-AwJ" secondAttribute="leading" id="Rlo-wj-TOI"/>
+                            <constraint firstItem="Kfr-VM-aFq" firstAttribute="leading" secondItem="lH2-B6-AwJ" secondAttribute="leading" id="W1a-TT-GKc"/>
+                            <constraint firstItem="vws-li-hiP" firstAttribute="trailing" secondItem="lH2-B6-AwJ" secondAttribute="trailing" constant="10" id="Zud-wi-RUd"/>
+                            <constraint firstItem="NMv-Xx-O5Z" firstAttribute="top" secondItem="lH2-B6-AwJ" secondAttribute="top" id="fke-oc-5vd"/>
+                            <constraint firstItem="obD-DD-0xY" firstAttribute="top" secondItem="Kfr-VM-aFq" secondAttribute="bottom" constant="30" id="rDT-Wh-jYx"/>
+                            <constraint firstItem="vws-li-hiP" firstAttribute="leading" secondItem="lH2-B6-AwJ" secondAttribute="leading" constant="10" id="rWG-Iw-MPh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lH2-B6-AwJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="vws-li-hiP" id="KbS-3y-4aE"/>
+                        <outlet property="syumiLabel" destination="obD-DD-0xY" id="Rcy-uo-hqS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qVj-Ww-NIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2952.1739130434785" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="V2R-ZI-rTI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wiz-eL-4fG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WlT-Db-LZc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lw7-VH-bjV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrW-5b-LiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>
